@@ -12,10 +12,23 @@ import Designer
 class LoginViewController: UIViewController, Designer {
     
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var testerLoginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
+    }
+    
+    @IBAction func testerLoginPressed(_ sender: Any) {
+        let view: InputModal = UIView.fromNib()
+        view.initialize(header: "Enter Password for Tester", inputType: .Password) { (input) in
+            if input == "passworD123!" {
+                TesterHelper.shared.signedIn = true
+                self.dismiss(animated: true, completion: nil)
+            } else if !input.isEmpty {
+                Alert.show(title: "Invalid Password", message: "")
+            }
+        }
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -39,6 +52,7 @@ class LoginViewController: UIViewController, Designer {
     
     func style() {
         styleFillButton(button: loginButton)
+        styleHollowButton(button: testerLoginButton)
     }
    
 

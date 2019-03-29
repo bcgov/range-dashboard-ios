@@ -20,6 +20,8 @@ class SettingsViewController: UIViewController, Designer {
     
     @IBAction func logoutButtonClicked(_ sender: UIButton) {
         Auth.logout()
+        TesterHelper.shared.signedIn = false
+        self.dismiss(animated: true, completion: nil)
     }
 
     func style() {

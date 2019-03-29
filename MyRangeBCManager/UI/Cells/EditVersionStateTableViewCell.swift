@@ -38,9 +38,9 @@ class EditVersionStateTableViewCell: UITableViewCell, Designer {
     }
     
     func setRemoteVersion(ios: Int, idphint: String) {
-        API.updateRemoteVersion(ios: ios, idphint: idphint, completion: { (done) in
+        API.updateRemoteVersion(ios: ios, idphint: idphint, completion: { (done, error) in
             if !done {
-                Alert.show(title: "Error", message: "Could not update")
+                Alert.show(title: "Error", message: error)
             } else {
                 Alert.show(title: "Updated", message: "")
             }

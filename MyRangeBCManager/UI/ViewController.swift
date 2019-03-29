@@ -17,17 +17,20 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Auth.hasCredentials() {
-            API.getUserInfo(completion: { (userInfo) in
-                if let user = userInfo, user.isAdmin {
-                    self.showDashboard()
-                } else {
-                    Alert.show(title: "You are not an Admin", message: "You must be an admin for MyRangeBC to use this application")
-                    Auth.logout()
-                    self.showLoginPage()
-                }
-            })
-            
+        if Auth.hasCredentials() || TesterHelper.shared.signedIn {
+            if TesterHelper.shared.signedIn {
+                self.showDashboard()
+            } else {
+                API.getUserInfo(completion: { (userInfo) in
+                    if let user = userInfo, user.isAdmin {
+                        self.showDashboard()
+                    } else {
+                        Alert.show(title: "You are not an Admin", message: "You must be an admin for MyRangeBC to use this application")
+                        Auth.logout()
+                        self.showLoginPage()
+                    }
+                })
+            }
         } else {
             self.showLoginPage()
         }
