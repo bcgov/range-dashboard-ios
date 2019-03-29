@@ -89,6 +89,11 @@ extension Designer {
         label.font = Fonts.getPrimary(size: 17)
     }
     
+    func styleFieldValue(textField: UITextField) {
+        textField.textColor = Colors.technical.bodyText
+        textField.font = Fonts.getPrimary(size: 17)
+    }
+    
     func styleFieldValue(textView: UITextView, editable: Bool = true) {
         textView.textColor = Colors.technical.bodyText
         textView.font = Fonts.getPrimary(size: 17)

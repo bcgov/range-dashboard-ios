@@ -17,6 +17,9 @@
 		1E242C2F224E8884006D219B /* CustomModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C2B224E8883006D219B /* CustomModal.swift */; };
 		1E242C30224E8884006D219B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C2C224E8883006D219B /* Alert.swift */; };
 		1E242C32224E888F006D219B /* SSOConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C31224E888E006D219B /* SSOConstants.swift */; };
+		1E242C34224E89AA006D219B /* TesterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C33224E89AA006D219B /* TesterHelper.swift */; };
+		1E242C38224E8DF7006D219B /* InputModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C36224E8DF7006D219B /* InputModal.swift */; };
+		1E242C39224E8DF7006D219B /* InputModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E242C37224E8DF7006D219B /* InputModal.xib */; };
 		1E429F7D2232E80700C8E3A9 /* VersionInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429F7B2232E80600C8E3A9 /* VersionInfoTableViewCell.swift */; };
 		1E429F7E2232E80700C8E3A9 /* VersionInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E429F7C2232E80600C8E3A9 /* VersionInfoTableViewCell.xib */; };
 		1E429F812232EEB400C8E3A9 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429F7F2232EEB400C8E3A9 /* OptionsTableViewCell.swift */; };
@@ -59,6 +62,9 @@
 		1E242C2B224E8883006D219B /* CustomModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModal.swift; sourceTree = "<group>"; };
 		1E242C2C224E8883006D219B /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		1E242C31224E888E006D219B /* SSOConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSOConstants.swift; sourceTree = "<group>"; };
+		1E242C33224E89AA006D219B /* TesterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterHelper.swift; sourceTree = "<group>"; };
+		1E242C36224E8DF7006D219B /* InputModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputModal.swift; sourceTree = "<group>"; };
+		1E242C37224E8DF7006D219B /* InputModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputModal.xib; sourceTree = "<group>"; };
 		1E429F7B2232E80600C8E3A9 /* VersionInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1E429F7C2232E80600C8E3A9 /* VersionInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VersionInfoTableViewCell.xib; sourceTree = "<group>"; };
 		1E429F7F2232EEB400C8E3A9 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
@@ -118,9 +124,17 @@
 				1E242C2C224E8883006D219B /* Alert.swift */,
 				1E242C29224E8883006D219B /* AlertView.swift */,
 				1E242C2A224E8883006D219B /* AlertView.xib */,
-				1E242C2B224E8883006D219B /* CustomModal.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		1E242C35224E8DA9006D219B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				1E242C36224E8DF7006D219B /* InputModal.swift */,
+				1E242C37224E8DF7006D219B /* InputModal.xib */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 		1E429F8B22397FA100C8E3A9 /* Extensions */ = {
@@ -158,7 +172,7 @@
 				1E65703522319D9B0042826E /* Services */,
 				1E65703622319DB60042826E /* UI */,
 				1E65704022319E3F0042826E /* Constants */,
-				1E65703F22319E2E0042826E /* Custom UI */,
+				1E65703F22319E2E0042826E /* Style */,
 				1E657015223099620042826E /* AppDelegate.swift */,
 				1E65701C223099640042826E /* Assets.xcassets */,
 				1E65701E223099640042826E /* LaunchScreen.storyboard */,
@@ -175,6 +189,7 @@
 				1E65702B22309AF60042826E /* Auth.swift */,
 				1E6570472231AA5F0042826E /* AuthHelper.swift */,
 				1E429F8E2239829900C8E3A9 /* VersionHelper.swift */,
+				1E242C33224E89AA006D219B /* TesterHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -182,6 +197,8 @@
 		1E65703622319DB60042826E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1E242C2B224E8883006D219B /* CustomModal.swift */,
+				1E242C35224E8DA9006D219B /* Input */,
 				1E242C1C224D62B4006D219B /* Alert */,
 				1E65704B2231B6CA0042826E /* Cells */,
 				1E657019223099620042826E /* Main.storyboard */,
@@ -204,12 +221,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1E65703F22319E2E0042826E /* Custom UI */ = {
+		1E65703F22319E2E0042826E /* Style */ = {
 			isa = PBXGroup;
 			children = (
 				1E6570412231A8160042826E /* Designer.swift */,
 			);
-			path = "Custom UI";
+			path = Style;
 			sourceTree = "<group>";
 		};
 		1E65704022319E3F0042826E /* Constants */ = {
@@ -310,6 +327,7 @@
 			files = (
 				1E242C2E224E8884006D219B /* AlertView.xib in Resources */,
 				1E429F8A2232FB1200C8E3A9 /* EditVersionStateTableViewCell.xib in Resources */,
+				1E242C39224E8DF7006D219B /* InputModal.xib in Resources */,
 				1E657020223099640042826E /* LaunchScreen.storyboard in Resources */,
 				1E65701D223099640042826E /* Assets.xcassets in Resources */,
 				1E429F932239885E00C8E3A9 /* ChangeVersionTableViewCell.xib in Resources */,
@@ -400,6 +418,7 @@
 				1E429F7D2232E80700C8E3A9 /* VersionInfoTableViewCell.swift in Sources */,
 				1E6570442231A8530042826E /* Colors.swift in Sources */,
 				1E242C2D224E8884006D219B /* AlertView.swift in Sources */,
+				1E242C34224E89AA006D219B /* TesterHelper.swift in Sources */,
 				1E429F8F2239829900C8E3A9 /* VersionHelper.swift in Sources */,
 				1E429F812232EEB400C8E3A9 /* OptionsTableViewCell.swift in Sources */,
 				1E242C28224D6DD3006D219B /* Notifications.swift in Sources */,
@@ -415,6 +434,7 @@
 				1E65702C22309AF60042826E /* Auth.swift in Sources */,
 				1E657018223099620042826E /* ViewController.swift in Sources */,
 				1E242C2F224E8884006D219B /* CustomModal.swift in Sources */,
+				1E242C38224E8DF7006D219B /* InputModal.swift in Sources */,
 				1E657016223099620042826E /* AppDelegate.swift in Sources */,
 				1E429F922239885E00C8E3A9 /* ChangeVersionTableViewCell.swift in Sources */,
 				1E65703B22319DEB0042826E /* HomeViewController.swift in Sources */,
