@@ -11,12 +11,12 @@
 		1E242C17224D5862006D219B /* FeedbackElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C16224D5862006D219B /* FeedbackElement.swift */; };
 		1E242C1A224D58CE006D219B /* UserFeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C18224D58CE006D219B /* UserFeedbackTableViewCell.swift */; };
 		1E242C1B224D58CE006D219B /* UserFeedbackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E242C19224D58CE006D219B /* UserFeedbackTableViewCell.xib */; };
-		1E242C20224D62BD006D219B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C1D224D62BD006D219B /* AlertView.swift */; };
-		1E242C21224D62BD006D219B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C1E224D62BD006D219B /* Alert.swift */; };
-		1E242C22224D62BD006D219B /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E242C1F224D62BD006D219B /* AlertView.xib */; };
-		1E242C24224D62CF006D219B /* CustomModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C23224D62CF006D219B /* CustomModal.swift */; };
-		1E242C26224D66B4006D219B /* SSOConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C25224D66B3006D219B /* SSOConstants.swift */; };
 		1E242C28224D6DD3006D219B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C27224D6DD3006D219B /* Notifications.swift */; };
+		1E242C2D224E8884006D219B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C29224E8883006D219B /* AlertView.swift */; };
+		1E242C2E224E8884006D219B /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E242C2A224E8883006D219B /* AlertView.xib */; };
+		1E242C2F224E8884006D219B /* CustomModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C2B224E8883006D219B /* CustomModal.swift */; };
+		1E242C30224E8884006D219B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C2C224E8883006D219B /* Alert.swift */; };
+		1E242C32224E888F006D219B /* SSOConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E242C31224E888E006D219B /* SSOConstants.swift */; };
 		1E429F7D2232E80700C8E3A9 /* VersionInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429F7B2232E80600C8E3A9 /* VersionInfoTableViewCell.swift */; };
 		1E429F7E2232E80700C8E3A9 /* VersionInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E429F7C2232E80600C8E3A9 /* VersionInfoTableViewCell.xib */; };
 		1E429F812232EEB400C8E3A9 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429F7F2232EEB400C8E3A9 /* OptionsTableViewCell.swift */; };
@@ -53,12 +53,12 @@
 		1E242C16224D5862006D219B /* FeedbackElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackElement.swift; sourceTree = "<group>"; };
 		1E242C18224D58CE006D219B /* UserFeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedbackTableViewCell.swift; sourceTree = "<group>"; };
 		1E242C19224D58CE006D219B /* UserFeedbackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserFeedbackTableViewCell.xib; sourceTree = "<group>"; };
-		1E242C1D224D62BD006D219B /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = temp/AlertView.swift; sourceTree = SOURCE_ROOT; };
-		1E242C1E224D62BD006D219B /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = temp/Alert.swift; sourceTree = SOURCE_ROOT; };
-		1E242C1F224D62BD006D219B /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertView.xib; path = temp/AlertView.xib; sourceTree = SOURCE_ROOT; };
-		1E242C23224D62CF006D219B /* CustomModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomModal.swift; path = temp/CustomModal.swift; sourceTree = SOURCE_ROOT; };
-		1E242C25224D66B3006D219B /* SSOConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSOConstants.swift; path = temp/SSOConstants.swift; sourceTree = SOURCE_ROOT; };
 		1E242C27224D6DD3006D219B /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		1E242C29224E8883006D219B /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		1E242C2A224E8883006D219B /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		1E242C2B224E8883006D219B /* CustomModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModal.swift; sourceTree = "<group>"; };
+		1E242C2C224E8883006D219B /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		1E242C31224E888E006D219B /* SSOConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSOConstants.swift; sourceTree = "<group>"; };
 		1E429F7B2232E80600C8E3A9 /* VersionInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1E429F7C2232E80600C8E3A9 /* VersionInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VersionInfoTableViewCell.xib; sourceTree = "<group>"; };
 		1E429F7F2232EEB400C8E3A9 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,10 +115,10 @@
 		1E242C1C224D62B4006D219B /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				1E242C23224D62CF006D219B /* CustomModal.swift */,
-				1E242C1E224D62BD006D219B /* Alert.swift */,
-				1E242C1D224D62BD006D219B /* AlertView.swift */,
-				1E242C1F224D62BD006D219B /* AlertView.xib */,
+				1E242C2C224E8883006D219B /* Alert.swift */,
+				1E242C29224E8883006D219B /* AlertView.swift */,
+				1E242C2A224E8883006D219B /* AlertView.xib */,
+				1E242C2B224E8883006D219B /* CustomModal.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 				1E65704022319E3F0042826E /* Constants */,
 				1E65703F22319E2E0042826E /* Custom UI */,
 				1E657015223099620042826E /* AppDelegate.swift */,
-				1E242C25224D66B3006D219B /* SSOConstants.swift */,
 				1E65701C223099640042826E /* Assets.xcassets */,
 				1E65701E223099640042826E /* LaunchScreen.storyboard */,
+				1E242C31224E888E006D219B /* SSOConstants.swift */,
 				1E657021223099640042826E /* Info.plist */,
 			);
 			path = MyRangeBCManager;
@@ -308,7 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E242C22224D62BD006D219B /* AlertView.xib in Resources */,
+				1E242C2E224E8884006D219B /* AlertView.xib in Resources */,
 				1E429F8A2232FB1200C8E3A9 /* EditVersionStateTableViewCell.xib in Resources */,
 				1E657020223099640042826E /* LaunchScreen.storyboard in Resources */,
 				1E65701D223099640042826E /* Assets.xcassets in Resources */,
@@ -399,26 +399,26 @@
 				1E65703922319DDA0042826E /* LoginViewController.swift in Sources */,
 				1E429F7D2232E80700C8E3A9 /* VersionInfoTableViewCell.swift in Sources */,
 				1E6570442231A8530042826E /* Colors.swift in Sources */,
-				1E242C20224D62BD006D219B /* AlertView.swift in Sources */,
+				1E242C2D224E8884006D219B /* AlertView.swift in Sources */,
 				1E429F8F2239829900C8E3A9 /* VersionHelper.swift in Sources */,
 				1E429F812232EEB400C8E3A9 /* OptionsTableViewCell.swift in Sources */,
 				1E242C28224D6DD3006D219B /* Notifications.swift in Sources */,
+				1E242C30224E8884006D219B /* Alert.swift in Sources */,
 				1E6570462231A9350042826E /* Fonts.swift in Sources */,
 				1E65703222309FEE0042826E /* RemoteVersion.swift in Sources */,
 				1E242C1A224D58CE006D219B /* UserFeedbackTableViewCell.swift in Sources */,
 				1E429F892232FB1200C8E3A9 /* EditVersionStateTableViewCell.swift in Sources */,
 				1E65703D22319E0C0042826E /* SettingsViewController.swift in Sources */,
+				1E242C32224E888F006D219B /* SSOConstants.swift in Sources */,
 				1E6570482231AA5F0042826E /* AuthHelper.swift in Sources */,
-				1E242C24224D62CF006D219B /* CustomModal.swift in Sources */,
 				1E6570422231A8160042826E /* Designer.swift in Sources */,
 				1E65702C22309AF60042826E /* Auth.swift in Sources */,
 				1E657018223099620042826E /* ViewController.swift in Sources */,
+				1E242C2F224E8884006D219B /* CustomModal.swift in Sources */,
 				1E657016223099620042826E /* AppDelegate.swift in Sources */,
-				1E242C21224D62BD006D219B /* Alert.swift in Sources */,
 				1E429F922239885E00C8E3A9 /* ChangeVersionTableViewCell.swift in Sources */,
 				1E65703B22319DEB0042826E /* HomeViewController.swift in Sources */,
 				1E65702A22309A7D0042826E /* API.swift in Sources */,
-				1E242C26224D66B4006D219B /* SSOConstants.swift in Sources */,
 				1E242C17224D5862006D219B /* FeedbackElement.swift in Sources */,
 				1E65702E22309CD90042826E /* Constants.swift in Sources */,
 				1E65704A2231AACD0042826E /* UserInfo.swift in Sources */,
@@ -571,6 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L796QSLV3E;
 				INFOPLIST_FILE = MyRangeBCManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L796QSLV3E;
 				INFOPLIST_FILE = MyRangeBCManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
