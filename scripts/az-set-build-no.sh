@@ -18,7 +18,10 @@
 
 set -Eeuo pipefail
 
-TARGET="SecureImage"
+[[ -z "$1" ]] && echo "Missing target name" && exit 1
+
+TARGET=$1
+
 PROJECT_FILE=$(find . -d 1 -iname '*.xcodeproj')
 APP_PLIST=$(
     xcodebuild -project "$PROJECT_FILE" -target "$TARGET" -showBuildSettings \

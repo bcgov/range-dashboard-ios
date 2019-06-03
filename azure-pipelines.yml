@@ -53,7 +53,7 @@ steps:
   timeoutInMinutes: 1
   inputs:
     script: |
-        ./scripts/az-set-build-no.sh
+        ./scripts/az-set-build-no.sh $(SchemaName)
 - task: CocoaPods@0
   timeoutInMinutes: 5
   inputs:
