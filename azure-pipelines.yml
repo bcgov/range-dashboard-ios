@@ -36,6 +36,7 @@ variables:
   AZServiceConnectionName: 'FullboarServiceConnection'
   AZBlobStorageContainerName: 'artifacts'
   ExportOptionsFileName: 'options.plist'
+  ExportMethod: 'app-store' #  app-store, package, ad-hoc, enterprise, or development.
 
 steps:
 - task: InstallAppleCertificate@2
@@ -71,7 +72,7 @@ steps:
     packageApp: true
     signingOption: 'default'
     provisioningProfileUuid: $(ProfileUUID)
-    exportMethod: 'enterprise'
+    exportMethod: $(ExportMethod)
     exportOptions: 'plist'
     exportOptionsPlist: $(ExportOptionsFileName)
     archivePath: '$(Build.ArtifactStagingDirectory)/pack'
