@@ -63,7 +63,7 @@ steps:
   displayName: Build
   timeoutInMinutes: 15
   inputs:
-    actions: 'build'
+    actions: 'archive' # build, clean, test, analyze, and archive
     scheme: $(SchemaName)
     sdk: 'iphoneos'
     configuration: 'Release'
@@ -76,7 +76,7 @@ steps:
     exportOptions: 'plist'
     exportOptionsPlist: $(ExportOptionsFileName)
     archivePath: '$(Build.ArtifactStagingDirectory)/pack'
-    args: '-xcconfig release-ci.xcconfig'
+    args: '-xcconfig release.xcconfig'
 - task: CopyFiles@2
   displayName: Copy IPA file
   inputs:
