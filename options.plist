@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>teamID</key>
+    <string>L796QSLV3E</string>
 	<key>method</key>
 	<string>app-store</string>
 	<key>signingStyle</key>
@@ -12,5 +14,10 @@
 	<true/>
 	<key>uploadSymbols</key>
 	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>ca.bc.gov.myrangebc-dashboard</key>
+		<string>f4036f8f-252c-4599-beab-28aed9935521</string>
+	</dict>
 </dict>
 </plist>
