@@ -76,7 +76,7 @@ steps:
     exportOptions: 'plist'
     exportOptionsPlist: $(ExportOptionsFileName)
     archivePath: '$(Build.ArtifactStagingDirectory)/pack'
-    args: '-xcconfig release.xcconfig'
+    args: '-xcconfig release-ci.xcconfig'
 - task: CopyFiles@2
   displayName: Copy IPA file
   inputs:
