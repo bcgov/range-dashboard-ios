@@ -70,13 +70,13 @@ steps:
     xcWorkspacePath: $(WorkspacePath)
     xcodeVersion: 'default'
     packageApp: true
-    signingOption: 'default'
+    signingOption: 'auto'
     provisioningProfileUuid: $(ProfileUUID)
     exportMethod: $(ExportMethod)
     exportOptions: 'plist'
     exportOptionsPlist: $(ExportOptionsFileName)
     archivePath: '$(Build.ArtifactStagingDirectory)/pack'
-    args: '-xcconfig release-ci.xcconfig'
+    # args: '-xcconfig release-ci.xcconfig'
 - task: CopyFiles@2
   displayName: Copy IPA file
   inputs:
