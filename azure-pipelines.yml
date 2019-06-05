@@ -70,7 +70,7 @@ steps:
     xcWorkspacePath: $(WorkspacePath)
     xcodeVersion: 'default'
     packageApp: true
-    signingOption: 'auto'
+    signingOption: 'default'
     provisioningProfileUuid: $(ProfileUUID)
     exportMethod: $(ExportMethod)
     exportOptions: 'plist'
